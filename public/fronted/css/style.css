@@ -1,0 +1,190 @@
+* {
+    font-size: 15px;
+}
+body {
+    background: #ededf5;
+    height:100vh !important;
+}
+.active{
+    color:#5842e3 !important;
+}
+.card {
+    border-radius: 5px;
+}
+.btn-theme {
+    background: #5842e3 !important;
+    color: #fff;
+}
+.submit {
+    text-align: right;
+}
+.header_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 999;
+}
+.header_bar i {
+    font-size: 18px;
+}
+.body_content {
+    margin-top: 6rem;
+}
+.body_content .profile_img {
+    background: #fff;
+    width: 75px;
+    border-radius: 100%;
+    height: 75px;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_content .profile_img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile,
+.change_pass,
+.wallet_card,
+.home,.transaction_card,.receive_qr {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.change_password,
+.logout {
+    cursor: pointer;
+    display: block;
+}
+.change_password:hover span,
+.logout:hover span {
+    color: #5842e3;
+}
+.change_password {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333;
+}
+.change_password:hover span {
+    color: #5842e3;
+}
+.bottom_bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.profile .profile_content div {
+    display: flex;
+    justify-content: space-between;
+}
+.profile_content .line {
+    margin-left: 2rem;
+}
+.card_wallet {
+    display: flex;
+    justify-content: center;
+}
+.home img{
+    width:30px;
+    height: 30px;
+}
+.scan_pay_qr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scan_pay,.qr{
+    background:#ddd;
+    padding:10px;
+    border-radius: 5px;
+}
+.home .transfer a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color:#333;
+}
+.home .transfer:hover a{
+    color:#5842e3;
+}
+.wallet_body {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.wallet_card .card {
+    color:#fff;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+}
+.transaction_card a{
+    text-decoration: none;
+    color: #333;
+}
+.bottom_bar a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+.bottom_bar a:hover {
+    color: #5842e3;
+}
+.bottom_bar i {
+    font-size: 18px;
+}
+.bottom_qr_parent{
+    background:#ededf5;
+    width:60px;
+    height:60px;
+    margin:-1.5rem auto;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_qr{
+    width:50px;
+    height: 50px;
+    margin:0 auto;
+    background:#fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom_qr i{
+    line-height: 2;
+}
+.bottom_qr {
+    animation-name: bottom_qr;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+  }
+@keyframes bottom_qr {
+    0%{box-shadow: rgb(38, 0, 255)  0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+    25%   {box-shadow: rgb(165, 68, 210)  0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+    50%   {box-shadow: rgb(38, 0, 255) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+    100%   {box-shadow: rgb(165, 68, 210)  0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+
+    
+  }
+
+  .notification{
+    color:#333;
+  }
