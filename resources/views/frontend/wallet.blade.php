@@ -32,12 +32,8 @@
                 <div>
                     {{$user->wallet ? number_format($user->wallet->amount) : '-'}} <small>MMK</small>
                 </div>
-            </div>
-           
-         </div>
-     
+            </div> 
+         </div>  
    </div>
- 
-
 </div>
 @endsection

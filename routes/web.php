@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth')->group(function(){
+    
     Route::get('/',[PageController::class,'index'])->name('home');
     Route::get('/wallet',[PageController::class,'wallet'])->name('wallet');
     Route::get('/account_profile',[PageController::class,'profile'])->name('account_profile');
@@ -39,7 +40,6 @@ Route::middleware('auth')->group(function(){
     Route::post('/scan_complete',[PageController::class,'scanPayComplete'])->name('scan_complete');
     Route::get('/notification',[NotificationController::class,'index'])->name('notification');
     Route::get('/notification_detail/{id}',[NotificationController::class,'show'])->name('notification_detail');
-
 
 });
 

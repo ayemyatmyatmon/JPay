@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::namespace('Api')->group(function(){
     Route::post('register',[AuthController::class,'register'])->name('register');
     Route::post('login',[AuthController::class,'login'])->name('login');
+    
     Route::middleware('auth:api')->group(function(){
         Route::get('profile',[PageController::class,'profile'])->name('profile');
         Route::post('logout',[PageController::class,'logout'])->name('logout');
